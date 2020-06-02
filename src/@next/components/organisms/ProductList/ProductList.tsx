@@ -13,11 +13,12 @@ export const ProductList: React.FC<IProps> = ({
   products,
   canLoadMore = false,
   loading = false,
+  testingContextId,
   onLoadMore = () => null,
 }: IProps) => {
   return (
     <>
-      <S.List>
+      <S.List data-test="productList" data-testId={testingContextId}>
         {products.map(product => (
           <Link
             to={generateProductUrl(product.id, product.name)}

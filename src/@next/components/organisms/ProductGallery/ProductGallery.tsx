@@ -58,7 +58,7 @@ export const ProductGallery: React.FC<IProps> = ({ images }: IProps) => {
   };
 
   return (
-    <S.Wrapper>
+    <S.Wrapper data-cy="productPhotosGallery">
       <S.ThumbnailsContainer>
         {!topImageInView && displayButtons && (
           <S.TopButton

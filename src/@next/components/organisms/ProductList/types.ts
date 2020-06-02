@@ -7,4 +7,8 @@ export interface IProps {
   canLoadMore?: boolean;
   loading?: boolean;
   onLoadMore?: () => void;
+  /**
+   * Specific object id which will be used for writting e2e tests
+   */
+  testingContextId?: string;
 }

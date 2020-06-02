@@ -8,7 +8,14 @@ export interface IProps {
   show: boolean;
   target?: HTMLElement | null;
   transparent?: boolean;
+  /**
+   * Name which will be used for writting e2e tests
+   */
   testingContext?: string;
+  /**
+   * Specific object id which will be used for writting e2e tests
+   */
+  testingContextId?: string;
 }
 
 export type TransitionState =

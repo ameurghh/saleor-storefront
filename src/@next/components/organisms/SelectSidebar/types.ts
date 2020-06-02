@@ -11,4 +11,8 @@ export interface IProps {
   target?: HTMLElement | null;
   footerTitle?: string;
   onClickFooter?: () => void;
+  /**
+   * Specific object id which will be used for writting e2e tests
+   */
+  testingContextId?: string;
 }

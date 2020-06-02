@@ -19,6 +19,7 @@ export const SelectSidebar: React.FC<IProps> = ({
   target,
   footerTitle,
   onClickFooter,
+  testingContextId,
 }: IProps) => {
   const { setElementRef } = useHandlerWhenClickedOutside(() => {
     hide();
@@ -32,6 +33,8 @@ export const SelectSidebar: React.FC<IProps> = ({
       hide={hide}
       transparent
       target={target}
+      testingContext="attributeSelection"
+      testingContextId={testingContextId}
     >
       <S.Wrapper ref={setElementRef()}>
         <CardHeader divider onHide={hide}>
