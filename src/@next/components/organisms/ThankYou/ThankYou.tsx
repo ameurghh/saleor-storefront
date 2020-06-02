@@ -15,7 +15,7 @@ const ThankYou: React.FC<IProps> = ({
   orderDetails,
 }: IProps) => {
   return (
-    <Container>
+    <Container data-cy="thankYouView">
       <S.Wrapper>
         <S.ThankYouHeader>
           Thank you

@@ -15,6 +15,7 @@ export const Overlay: React.FC<IProps> = ({
   show,
   transparent = false,
   target = modalRoot,
+  testingContext,
 }: IProps) => {
   const animationProps = {
     open: show,
@@ -30,6 +31,7 @@ export const Overlay: React.FC<IProps> = ({
             state={state}
             onClick={hide}
             transparent={transparent}
+            data-cy={testingContext}
           >
             <S.Lightbox
               {...animationProps}

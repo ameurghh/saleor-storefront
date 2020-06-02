@@ -8,6 +8,7 @@ export interface IProps {
   show: boolean;
   target?: HTMLElement | null;
   transparent?: boolean;
+  testingContext?: string;
 }
 
 export type TransitionState =
