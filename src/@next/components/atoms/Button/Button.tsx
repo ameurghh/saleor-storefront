@@ -11,6 +11,7 @@ export const Button: React.FC<IProps> = ({
   btnRef,
   children,
   testingContext,
+  testingContextId,
   fullWidth = false,
   size = "md",
   ...props
@@ -20,6 +21,7 @@ export const Button: React.FC<IProps> = ({
   return (
     <ButtonWithTheme  
       data-test={testingContext}
+      data-testId={testingContextId}
       color={color}
       fullWidth={fullWidth}
       size={size}

@@ -8,7 +8,8 @@ export interface IProps {
   loading?: boolean;
   onLoadMore?: () => void;
   /**
-   * Specific object id which will be used for writting e2e tests
+   * Used as marker for writing e2e tests. Use unique ID to differentiate 
+   * multiple elements in the same view from each other 
    */
   testingContextId?: string;
 }
