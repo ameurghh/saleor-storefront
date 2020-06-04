@@ -20,7 +20,7 @@ const DEFAULT_PROPS = {
   hide: action("hide"),
   show: true,
   submitBtnText: "Save",
-  submitButtonDataCy: "submitTestModalButton",
+  submitButtontestingContext: "submitTestModalButton",
   target: portalRoot,
   title: "Modal title",
 };

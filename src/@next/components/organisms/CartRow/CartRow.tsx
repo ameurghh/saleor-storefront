@@ -17,11 +17,11 @@ const QuantityButtons = (
   <S.QuantityButtons>
     <div
       onClick={substract}
-      data-cy={`cartPageItem${index}QuantityBtnSubtract`}
+      data-test={`cartPageItemQuantityBtnSubtract`}
     >
       <Icon size={16} name="horizontal_line" />
     </div>
-    <div onClick={add} data-cy={`cartPageItem${index}QuantityBtnAdd`}>
+    <div onClick={add} data-test={`cartPageItemQuantityBtnAdd`}>
       <Icon size={16} name="plus" />
     </div>
   </S.QuantityButtons>
@@ -99,27 +99,27 @@ export const CartRow: React.FC<IProps> = ({
   const productUrl = generateProductUrl(id, name);
 
   return (
-    <S.Wrapper>
+    <S.Wrapper data-test="cartRow" data-testId={sku}>
       <S.Photo>
         <Link to={productUrl}>
-          <CachedImage data-cy={`cartPageItem${index}Image`} {...thumbnail} />
+          <CachedImage data-test={`cartPageItemImage`} {...thumbnail} />
         </Link>
       </S.Photo>
       <S.Description>
         <Link to={productUrl}>
-          <S.Name data-cy={`cartPageItem${index}Name`}>{name}</S.Name>
+          <S.Name data-test={`cartPageItemName`}>{name}</S.Name>
         </Link>
         <S.Sku>
           <S.LightFont>
             SKU:{" "}
-            <span data-cy={`cartPageItem${index}SKU`}>{sku ? sku : "-"}</span>
+            <span data-test={`cartPageItemSKU`}>{sku ? sku : "-"}</span>
           </S.LightFont>
         </S.Sku>
-        <S.Attributes data-cy={`cartPageItem${index}Attributes`}>
+        <S.Attributes data-test={`cartPageItemAttributes`}>
           {attributes.map(({ attribute, values }, attributeIndex) => (
             <S.SingleAttribute key={attribute.id}>
               <span
-                data-cy={`cartPageItem${index}SingleAttribute${attributeIndex}`}
+                data-test={`cartPageItemSingleAttribute`} data-testId={attributeIndex}
               >
                 <S.LightFont>{attribute.name}:</S.LightFont>{" "}
                 {values.map(value => value.name).join(", ")}
@@ -130,7 +130,7 @@ export const CartRow: React.FC<IProps> = ({
       </S.Description>
       <S.Quantity>
         <TextField
-          data-cy={`cartPageItem${index}QuantityInput`}
+          data-test={`cartPageItemQuantityInput`}
           name="quantity"
           label="Quantity"
           value={tempQuantity}
@@ -142,7 +142,7 @@ export const CartRow: React.FC<IProps> = ({
       </S.Quantity>
       <S.Trash>
         <IconButton
-          data-cy={`cartPageItem${index}BtnRemove`}
+          data-test={`cartPageItemBtnRemove`}
           size={22}
           name="trash"
           onClick={onRemove}
@@ -153,13 +153,13 @@ export const CartRow: React.FC<IProps> = ({
         <S.PriceLabel>
           <S.LightFont>Total Price:</S.LightFont>
         </S.PriceLabel>
-        <p>{totalPrice}</p>
+        <p data-test="totalPrice">{totalPrice}</p>
       </S.TotalPrice>
       <S.UnitPrice>
         <S.PriceLabel>
           <S.LightFont>Price:</S.LightFont>
         </S.PriceLabel>
-        <p>{unitPrice}</p>
+        <p data-test="unitPrice">{unitPrice}</p>
       </S.UnitPrice>
     </S.Wrapper>
   );

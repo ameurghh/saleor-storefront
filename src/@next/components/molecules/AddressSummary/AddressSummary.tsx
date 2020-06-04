@@ -6,10 +6,10 @@ import { IProps } from "./types";
 /**
  * Address summary
  */
-const AddressSummary: React.FC<IProps> = ({ address, email }: IProps) => {
+const AddressSummary: React.FC<IProps> = ({ address, email, testingContext }: IProps) => {
   if (address) {
     return (
-      <S.Wrapper>
+      <S.Wrapper data-test={testingContext}>
         <strong>{`${address.firstName} ${address.lastName}`}</strong>
         <br />
         {address.companyName && (
@@ -36,7 +36,7 @@ const AddressSummary: React.FC<IProps> = ({ address, email }: IProps) => {
       </S.Wrapper>
     );
   } else if (email) {
-    return <S.Wrapper>{email}</S.Wrapper>;
+    return <S.Wrapper data-test={testingContext}>{email}</S.Wrapper>;
   }
   return null;
 };

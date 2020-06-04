@@ -5,4 +5,6 @@ export interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color?: Color;
   size?: Size;
   children: React.ReactNode;
+  testingContext: string;
+  testingContextId?: string; 
 }

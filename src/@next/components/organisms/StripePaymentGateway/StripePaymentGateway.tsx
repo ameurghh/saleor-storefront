@@ -90,7 +90,7 @@ const StripePaymentGateway: React.FC<IProps> = ({
   const allErrors = [...errors, ...submitErrors];
 
   return (
-    <div data-cy="stripeGateway">
+    <div data-test="stripeGateway">
       <Elements stripe={stripePromise}>
         <StripeCreditCardForm
           formId={formId}

@@ -1,7 +1,7 @@
 export interface IButtonProps {
   action?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
   text: string;
-  dataCy: string;
+  testingContext: string;
 }
 
 export interface IProps {

@@ -13,7 +13,7 @@ export const IconButton: React.FC<IProps> = ({
   ...props
 }: IProps) => {
   return (
-    <S.Wrapper data-cy="icon_button" onClick={onClick} {...props}>
+    <S.Wrapper data-test="icon_button" onClick={onClick} {...props}>
       <Icon name={name} size={size} color={color} />
     </S.Wrapper>
   );

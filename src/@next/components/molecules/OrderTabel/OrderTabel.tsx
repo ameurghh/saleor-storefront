@@ -42,7 +42,7 @@ export const OrderTabel: React.FC<IProps> = ({ orders, history }: IProps) => {
                   const date = new Date(order.node.created);
                   return (
                     <S.Row
-                      data-cy="order__row"
+                      data-test="order__row"
                       key={order.node.number}
                       onClick={evt => {
                         evt.stopPropagation();

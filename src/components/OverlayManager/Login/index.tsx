@@ -54,14 +54,14 @@ class Login extends React.Component<
             </div>
             <div className="login__tabs">
               <span
-                data-cy="accountOverlayLoginTab"
+                data-test="accountOverlayLoginTab"
                 onClick={() => this.changeActiveTab("login")}
                 className={this.state.active === "login" ? "active-tab" : ""}
               >
                 Sign in to account
               </span>
               <span
-                data-cy="accountOverlayRegisterTab"
+                data-test="accountOverlayRegisterTab"
                 onClick={() => this.changeActiveTab("register")}
                 className={this.state.active === "register" ? "active-tab" : ""}
               >

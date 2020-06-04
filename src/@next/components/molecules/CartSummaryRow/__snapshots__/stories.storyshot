@@ -68,7 +68,7 @@ exports[`Storyshots @components/molecules/CartSummaryRow default 1`] = `
   >
     <div
       className="c2"
-      data-cy="cartSummaryItemundefinedName"
+      data-test="cartSummaryItemundefinedName"
     >
       The Great Square Table
     </div>
@@ -77,7 +77,7 @@ exports[`Storyshots @components/molecules/CartSummaryRow default 1`] = `
     >
       SKU: 
       <span
-        data-cy="cartSummaryItemundefinedSKU"
+        data-test="cartSummaryItemundefinedSKU"
       >
         TGS-122A
       </span>
@@ -88,14 +88,14 @@ exports[`Storyshots @components/molecules/CartSummaryRow default 1`] = `
       Quantity:
        
       <span
-        data-cy="cartSummaryItemundefinedQuantity"
+        data-test="cartSummaryItemundefinedQuantity"
       >
         2
       </span>
     </div>
     <div
       className="c5"
-      data-cy="cartSummaryItemundefinedPrice"
+      data-test="cartSummaryItemundefinedPrice"
     >
       <span>
         PLN 123.00
@@ -106,7 +106,7 @@ exports[`Storyshots @components/molecules/CartSummaryRow default 1`] = `
     >
       <img
         alt="Product image"
-        data-cy="cartSummaryItemundefinedImage"
+        data-test="cartSummaryItemundefinedImage"
         onError={[Function]}
         src="test-file-stub"
         srcSet="test-file-stub 1x"

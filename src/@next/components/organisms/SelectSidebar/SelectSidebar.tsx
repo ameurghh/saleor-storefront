@@ -52,6 +52,7 @@ export const SelectSidebar: React.FC<IProps> = ({
             return (
               <S.Option key={option.value} disabled={isDisabled}>
                 <OverlayItem
+                  testingContextId={option.value}
                   selected={isSelected}
                   disabled={isDisabled}
                   onClick={() => onSelect(option.value)}
@@ -64,7 +65,7 @@ export const SelectSidebar: React.FC<IProps> = ({
         </S.Content>
         {footerTitle && (
           <S.Footer onClick={onClickFooter}>
-            <ButtonLink color="secondary">{footerTitle}</ButtonLink>
+            <ButtonLink testingContext="footerActionButton" color="secondary">{footerTitle}</ButtonLink>
           </S.Footer>
         )}
       </S.Wrapper>

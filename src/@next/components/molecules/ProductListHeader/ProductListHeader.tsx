@@ -20,7 +20,7 @@ export const ProductListHeader: React.FC<IProps> = ({
     <S.Wrapper>
       <S.Bar>
         <S.LeftSide>
-          <S.FiltersButton onClick={openFiltersMenu} data-cy="filters__button">
+          <S.FiltersButton onClick={openFiltersMenu} data-test="filters__button">
             <Icon name="filter" size={24} />
             <S.Filters>
               FILTERS{" "}
@@ -37,7 +37,7 @@ export const ProductListHeader: React.FC<IProps> = ({
         </S.LeftSide>
 
         <S.RightSide>
-          <S.Element data-cy="no-of-products-found_label">
+          <S.Element data-test="no-of-products-found_label">
             <S.Label>Products found: </S.Label>
             {numberOfProducts}
           </S.Element>

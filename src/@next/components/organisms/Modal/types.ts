@@ -5,7 +5,7 @@ export interface IProps {
   cancelBtnText?: string;
   children: React.ReactNode;
   submitBtnText: string;
-  submitButtonDataCy: string;
+  submitButtontestingContext: string;
   disabled: boolean;
   formId?: string;
   show: boolean;

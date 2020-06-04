@@ -21,5 +21,5 @@ export interface IProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * Unique name used as selector for writing e2e tests in Cypress
    */
-  dataCy: string;
+  testingContext: string;
 }

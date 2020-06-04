@@ -141,6 +141,8 @@ exports[`Storyshots @components/organisms/ProductList default 1`] = `
 >
   <div
     className="c1"
+    data-test="productList"
+    data-testId="testCategory"
   >
     <a
       href="/product/apple-juice/72/"
@@ -148,7 +150,7 @@ exports[`Storyshots @components/organisms/ProductList default 1`] = `
     >
       <div
         className="c2"
-        data-cy="product-tile"
+        data-test="product-tile"
       >
         <h4
           className="c3"
@@ -180,7 +182,7 @@ exports[`Storyshots @components/organisms/ProductList default 1`] = `
     >
       <div
         className="c2"
-        data-cy="product-tile"
+        data-test="product-tile"
       >
         <h4
           className="c3"
@@ -212,7 +214,7 @@ exports[`Storyshots @components/organisms/ProductList default 1`] = `
     >
       <div
         className="c2"
-        data-cy="product-tile"
+        data-test="product-tile"
       >
         <h4
           className="c3"
@@ -244,7 +246,7 @@ exports[`Storyshots @components/organisms/ProductList default 1`] = `
     >
       <div
         className="c2"
-        data-cy="product-tile"
+        data-test="product-tile"
       >
         <h4
           className="c3"
@@ -276,7 +278,7 @@ exports[`Storyshots @components/organisms/ProductList default 1`] = `
     >
       <div
         className="c2"
-        data-cy="product-tile"
+        data-test="product-tile"
       >
         <h4
           className="c3"
@@ -308,7 +310,7 @@ exports[`Storyshots @components/organisms/ProductList default 1`] = `
     >
       <div
         className="c2"
-        data-cy="product-tile"
+        data-test="product-tile"
       >
         <h4
           className="c3"
@@ -341,7 +343,7 @@ exports[`Storyshots @components/organisms/ProductList default 1`] = `
     <button
       className="c7"
       color="secondary"
-      data-cy="loadMoreProductsButton"
+      data-test="loadMoreProductsButton"
       onClick={[Function]}
       size="md"
     >
